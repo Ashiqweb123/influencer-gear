@@ -179,5 +179,8 @@ footer {
   .feature {
     margin-top: 40px;
   }
+  .footer {
+    width: 100%;
+  }
 }
 /* media -query */
