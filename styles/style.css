@@ -101,7 +101,29 @@ ul li a {
   align-items: center;
   gap: 5px;
 }
+.arrow-icon {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+}
+.arrow-icon p {
+  color: #e02c6dde;
+}
+.arrow-icon img {
+  color: #e02c6dde;
+}
 /* poular-collection-css */
+/* feature-css */
+.feature {
+  justify-content: space-around;
+  align-items: center;
+  gap: 70px;
+  margin-top: 100px;
+}
+.feature-content {
+  width: 60%;
+}
+/* feature-css */
 /* media -query */
 @media screen and (max-width: 540px) {
   .nav-bar,
@@ -133,6 +155,9 @@ ul li a {
   }
   .card {
     margin: 0 auto;
+  }
+  .feature {
+    margin-top: 40px;
   }
 }
 /* media -query */
