@@ -54,13 +54,54 @@ ul li a {
   width: 60%;
 }
 /* nav-css */
-
+/* sponsor-css */
 .spoonser {
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
+/* sponsor-css */
 
+/* poular-collection-css */
+.collection {
+  margin-top: 100px;
+}
+.section-title {
+  color: rgb(58, 58, 58);
+  font-size: 28px;
+  text-align: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  width: 320px;
+  padding: 0 15px;
+}
+.card img {
+  padding: 0 15px;
+  margin-top: 10px;
+}
+.icon-term .icon {
+  width: 10px;
+  height: 10px;
+}
+.icon-value p {
+  color: rgb(120, 120, 133);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+}
+.rating {
+  align-items: center;
+  gap: 5px;
+}
+/* poular-collection-css */
 /* media -query */
 @media screen and (max-width: 540px) {
   .nav-bar,
@@ -85,6 +126,13 @@ ul li a {
   }
   .spoonser img {
     margin: 15px 0;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .card {
+    margin: 0 auto;
   }
 }
 /* media -query */
