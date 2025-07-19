@@ -12,6 +12,10 @@
   border: none;
   color: white;
 }
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
 /* shared-style */
 
 /* nav-css */
@@ -33,7 +37,7 @@ ul li a {
 }
 .banner-content-area {
   width: 40%;
-  padding-left: 120px;
+  /* padding-left: 120px; */
 }
 .banner-title {
   color: rgb(58, 58, 58);
@@ -45,10 +49,42 @@ ul li a {
   color: rgb(58, 58, 58);
   font-size: 1rem;
   font-weight: 600;
-  text-align: left;
 }
 .banner-img img {
-  width: 440px;
-  height: 414px;
+  width: 60%;
 }
 /* nav-css */
+
+.spoonser {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* media -query */
+@media screen and (max-width: 540px) {
+  .nav-bar,
+  .flex {
+    flex-direction: column;
+  }
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+  .banner-content-area {
+    width: auto;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  .spoonser {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .spoonser img {
+    margin: 15px 0;
+  }
+}
+/* media -query */
